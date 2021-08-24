@@ -20,6 +20,7 @@ class Product extends Model
         'is_active',
         'sort',
         'img',
+        'price',
         'brand_name',
         'inner_diameter',
         'external_diameter',

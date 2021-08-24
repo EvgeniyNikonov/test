@@ -20,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->boolean('is_active')->default(1);
             $table->integer('sort')->nullable();
             $table->string('img')->nullable();
+            $table->string('price')->nullable();
             $table->string('brand_name')->nullable();
             $table->string('inner_diameter')->nullable();
             $table->string('external_diameter')->nullable();

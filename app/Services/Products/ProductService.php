@@ -122,11 +122,11 @@ class ProductService extends BaseService
 
         // Фильтры
 
-        if (request()->has('is_active') and request()->is_active) {
+        if (request()->has('is_active') and request()->is_active != null) {
             $query->where('is_active', request()->is_active);
         }
 
-        $query->orderBy('sort');
+        $query = $query->orderBy('sort', 'asc');
 
 		return Datatables::of($query)
             ->addColumn('is_active', function ($product) {

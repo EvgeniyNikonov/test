@@ -110,7 +110,7 @@ class UserService extends BaseService
 
         // Фильтры
 
-        if (request()->has('is_active') and request()->is_active) {
+        if (request()->has('is_active') and request()->is_active != null) {
             $query->where('is_active', request()->is_active);
         }
 

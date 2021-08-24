@@ -97,6 +97,13 @@
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-sm-6">
                                                 <div class="form-group">
+                                                    <label>Цена</label>
+                                                    <input class="form-control {{ $errors->has('price') ? 'is-invalid' : '' }}" name="price"
+                                                        value="{{ old('price') ?? $product->price ?? '' }}">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                                <div class="form-group">
                                                     <label>Бренд</label>
                                                     <input class="form-control {{ $errors->has('brand_name') ? 'is-invalid' : '' }}" name="brand_name"
                                                         value="{{ old('brand_name') ?? $product->brand_name ?? '' }}">

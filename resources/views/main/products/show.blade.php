@@ -73,6 +73,12 @@
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-sm-6">
                                             <div class="form-group">
+                                                <label>Цена</label>
+                                                <input class="form-control" value="{{ $product->price }}" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <div class="form-group">
                                                 <label>Бренд</label>
                                                 <input class="form-control" value="{{ $product->brand_name }}" disabled>
                                             </div>
