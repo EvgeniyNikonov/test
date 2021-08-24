@@ -18,6 +18,11 @@ Auth::routes(['register' => false]);
 Route::group(['middleware' => ['auth']], function () {
 
     Route::post('logout', 'Auth\LoginController@logout')->name('logout');
-    Route::get('/', 'App\Http\Controllers\HomeController@index')->name('home');
+    Route::get('/', 'HomeController@index')->name('home');
+
+    /**
+     * Пользователи
+     */
+    Route::resource('users', 'Users\UserController');
 
 });

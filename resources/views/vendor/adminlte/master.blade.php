@@ -100,7 +100,7 @@
             <livewire:scripts />
         @endif
     @endif
-
+    <script src="{{ asset('/js/main.js?2') }}"></script>
     {{-- Custom Scripts --}}
     @yield('adminlte_js')
 
