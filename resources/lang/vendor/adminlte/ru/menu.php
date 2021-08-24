@@ -17,5 +17,5 @@ return [
     'warning'                       => 'Внимание',
     'information'                   => 'Информация',
     'users'                         => 'Пользователи',
-    'goods'                         => 'Товары',
+    'products'                         => 'Товары',
 ];

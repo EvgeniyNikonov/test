@@ -13,11 +13,11 @@ return [
 
     'roles_structure' => [
         'administrator' => [
-            'goods' => 'c,r,u,d',
+            'products' => 'c,r,u,d',
             'users' => 'c,r,u,d',
         ],
         'manager' => [
-            'goods' => 'r',
+            'products' => 'r',
             'users' => 'r'
         ],
     ],

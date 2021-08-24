@@ -25,4 +25,9 @@ Route::group(['middleware' => ['auth']], function () {
      */
     Route::resource('users', 'Users\UserController');
 
+    /**
+     * Товары
+     */
+    Route::resource('products', 'Products\ProductController');
+
 });

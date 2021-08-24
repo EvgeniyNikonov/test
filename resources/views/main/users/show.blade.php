@@ -25,35 +25,50 @@
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12">
-                                    ID: {{$user->id}} 
+                                    <div class="form-group">
+                                        <label>ID <sup class="text-danger">*</sup></label>
+                                        <input class="form-control" value="{{$user->id}}" disabled>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12">
-                                    ФИО: {{ $user->name }}
+                                    <div class="form-group">
+                                        <label>ФИО</label>
+                                        <input class="form-control" value="{{ $user->name }}" disabled>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12">
-                                    Логин: {{ $user->email }}
+                                    <div class="form-group">
+                                        <label>Логин</label>
+                                        <input class="form-control" value="{{ $user->email }}" disabled>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12">
-                                   Октивность: {{ $user->is_active ? 'Да' : 'Нет' }}
+                                    <div class="form-group">
+                                        <label>Октивность</label>
+                                        <input class="form-control" value="{{ $user->is_active ? 'Да' : 'Нет'}}" disabled>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-12">
-                                    Роль: {{ $user->roles[0]->display_name }}
+                                    <div class="form-group">
+                                        <label>Роль</label>
+                                        <input class="form-control" value="{{ $user->roles[0]->display_name }}" disabled>
+                                    </div>
                                 </div>
                             </div>
                         </div>

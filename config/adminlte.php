@@ -228,8 +228,8 @@ return [
       
         // Sidebar items:
         [
-            'text' => 'goods',
-            'url'  => 'goods',
+            'text' => 'products',
+            'url'  => 'products',
             'icon' => 'fas fa-fw fa-shopping-basket',
         ],
         [
